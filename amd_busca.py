@@ -73,7 +73,7 @@ cidade_2 = ['angra dos reis', 'adr', 'brasília', 'brasilia', 'caxias', 'conserv
 #
 cidade_5 = ['caranguejo', 'coimbra', 'coronel fabriciano', 'ervália', 'ervalia', 'ipatinga', 'itabira', 'joão molevade', 'joao molevade', 'molevade',  'mercês', 'merces', 'nova era', 'ponte nova', 'porto firme', 'rio casca', 'rio pomba', 'são domingos do prata', 'sao domingos do prata', 'sddp', 'são geraldo', 'sao geraldo', 'senador firmino', 'tabuleiro', 'teixeiras', 'timóteo', 'timoteo', 'tocantins', 'ubá', 'uba', 'viçosa', 'vicosa', 'visconde do rio branco', 'vdrb']
 #
-#VIAÇÃO COMETA / CATARINENSE:
+#VIAÇÃO COMETA / CATARINENSE / EXPRESSO DO SUL / 1001:
 #
 cidade_3 = ['alfenas', 'águas de lindóia', 'aguas de lindoia', 'adl', 'americana', 'aparecida do norte', 'ap do norte', 'adn', 'bragança paulista', 'braganca paulista', 'campinas', 'campo mourão', 'campo mourao', 'sp', 'são paulo', 'sao paulo', 'araraquara', '*catanduvas', 'curitiba', 'extrema', 'florianópolis',  'florianopolis', 'floripa', 'jacareí', 'jacarei', 'joinvile', 'jundiaí', 'jundiai', 'londrina', 'medianeira', 'mogi mirim', 'mogi guaçu', 'mogi guaçú', 'mogi guacu', 'ourinhos', '*piracicaba', 'pirassununga', 'porto alegre', 'resende', '*ribeirão preto', '*ribeirao preto', 'santo andré', 'santo andre', 'santos', 'são caetano', 'sao caetano', 'são carlos', 'sao carlos', 'são gonçalo do sapucaia', 'sao gonçalo do sapucaia', 'sgds', 'são joão do rio preto', 'sao joao do rio preto', 'sjdrp', 'sorocaba']
 #
@@ -153,76 +153,76 @@ while True:
 		#VIAÇÃO COORDENADAS
 		#
 		if valores['-NOME-'].lower() in cidade_1 and valores['-NOME-'].lower() in tarifa_3:
-			print('EMPRESA: VIAÇÃO COORDENADAS  -  ATUAL\n\nCONTATO: (32) 3112-0423 - GUICHÊS: 04 e 05\n\nSITE: https://www.saritur.queropassagem.com.br\n\nFUNCIONAMENTO: dom a sex das 06h30 - 00h\nsab de 06h30 - 19h\n\nPLATAFORMA: 22')
+			print('EMPRESA: VIAÇÃO COORDENADAS  -  ATUAL\n\nCONTATO: (32) 3112-0423 - GUICHÊS: 04 e 05\n\nSITE: https://www.saritur.com.br/\n\nFUNCIONAMENTO: dom a sex das 06h30 - 00h\nsab de 06h30 - 19h\n\nPLATAFORMA: 22')
 			print('\nTARIFA DE EMBARQUE R$2,55')
 		#
 		elif valores['-NOME-'].lower() in cidade_1 and valores['-NOME-'].lower() in tarifa_4:
-			print('EMPRESA: VIAÇÃO COORDENADAS  -  ATUAL\n\nCONTATO: (32) 3112-0423 - GUICHÊS: 04 e 05\n\nSITE: https://www.saritur.queropassagem.com.br\n\nFUNCIONAMENTO: dom a sex das 06h30 - 00H\nsab de 06h30 ás 19hn\n\nPLATAFORMA: 22')
+			print('EMPRESA: VIAÇÃO COORDENADAS  -  ATUAL\n\nCONTATO: (32) 3112-0423 - GUICHÊS: 04 e 05\n\nSITE: https://www.saritur.com.br/\n\nFUNCIONAMENTO: dom a sex das 06h30 - 00H\nsab de 06h30 ás 19hn\n\nPLATAFORMA: 22')
 			print('\nTARIFA DE EMBARQUE R$5,25')
 		#
 		#VIAÇÃO UTIL/BRISA/SAMPAIO
 		#
 		elif valores['-NOME-'].lower() in cidade_2 and valores['-NOME-'].lower() in tarifa_3:
-			print('EMPRESA: VIAÇÃO UTIL / BRISA / SAMPAIO / GYPSYY\n\nGUICHÊS: 20 à 24\n\nCONTATOS: 0800 883 8830\n\nWHATSAPP: (32) 98833-5497 de dom - dom de 06h30 - 20h30\n\nSITE: https://www.util.com.br\n\nFUNCIONAMENTO: 23h por dia (intervalo: 02h30 às 03h30)\n\nPLATAFORMAS: 13, 14, e 15')
+			print('EMPRESA: VIAÇÃO UTIL / BRISA / SAMPAIO / GYPSYY / GUANABARA\n\nGUICHÊS: 20 à 24 - CONTATOS: 0800 883 8830\n\nSITE:\n\n	UTIL: https://www.util.com.br/\n	GUANABARA: https://www.viajeguanabara.com.br/\n	SAMPAIO: https://viacaosampaio.com.br/\n\nPLATAFORMAS: 13, 14, e 15')
 			print('\nTARIFA DE EMBARQUE R$2,55')
 		#
 		elif valores['-NOME-'].lower() in cidade_2 and valores['-NOME-'].lower() in tarifa_4:
-			print('EMPRESA: VIAÇÃO UTIL / BRISA / SAMPAIO / GYPSYY\n\nGUICHÊS: 20 à 24\n\nCONTATOS: 0800 883 8830\n\nWHATSAPP: (32) 98833-5497 de dom - dom de 06h30 - 20h30\n\nSITE: https://www.util.com.br\n\nFUNCIONAMENTO: 23h por dia (intervalo: 02h30 - 03H:30)\n\nPLATAFORMAS: 13, 14, e 15')
+			print('EMPRESA: VIAÇÃO UTIL / BRISA / SAMPAIO / GYPSYY / GUANABARA\n\nGUICHÊS: 20 à 24 - CONTATOS: 0800 883 8830\n\nSITE:\n\n	UTIL: https://www.util.com.br/\n	GUANABARA: https://www.viajeguanabara.com.br/\n	SAMPAIO: https://viacaosampaio.com.br/\n\nPLATAFORMAS: 13, 14, e 15')
 			print('\nTARIFA DE EMBARQUE R$5,25')
 		#
-		#VIAÇÃO COMETA / CATARINENSE:
+		#VIAÇÃO COMETA / CATARINENSE / EXPRESSO DO SUL / 1001:
 		#
 		elif valores['-NOME-'].lower() in cidade_3 and valores['-NOME-'].lower() in tarifa_4:
-			print('EMPRESA: VIAÇÃO COMETA / CATARINENSE - GUICHÊS 15 e 16\n\nCONTATO: 4004-9600 e 0800 942 0030\n\nSITE: https://www.cometa.com.br - https://www.catarinense.com.br\n\nFUNCIONAMENTO: DIARIAMENTE 07h30 - 23h30\n\nPLATAFORMAS: 10, 11 e 12')
+			print('EMPRESA: VIAÇÃO COMETA / CATARINENSE / EXPRESSO DO SUL / 1001\n\nGUICHÊS 15 e 16 - CONTATO: 4004-9600 e 0800 942 0030\n\nSITE:\n	COMETA: https://www.cometa.com.br\n	CATARINENSE: https://www.catarinense.com.br\n	EXPRESSO DO SUL: https://www.expressodosul.com.br\n	1001: https://www.autoviacao1001.com.br\n\nFUNCIONAMENTO: DIARIAMENTE 07h30 - 23h30\n\nPLATAFORMAS: 10, 11 e 12')
 			print('\nTARIFA DE EMBARQUE R$5,25')
 		#
 		#VIAÇÃO PROGRESSO:
 		#
 		elif valores['-NOME-'].lower() in cidade_4 and valores['-NOME-'].lower() in tarifa_1:
-			print('EMPRESA: VIAÇÃO PROGRESSO - GUICHÊ: 30\n\nCONTATOS: (32) 3215-5020 / (32) 3216-2975 (PANTUR) /  (32) 3025-3936 (ZÉ KODAK)\n\nSITE: https://www.viacaoprogresso.com.br\n\nFUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n\nPLATAFORMAS: 25 e 26')
+			print('EMPRESA: VIAÇÃO PROGRESSO - GUICHÊ: 30\n\nCONTATOS:\n	GUICHÊ:(32) 3215-5020\n	PANTUR:(32) 3216-2975\n	LOJA DO ZÉ KODAK: (32) 3025-3936\n\nSITE: https://www.viacaoprogresso.com.br\n\nFUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n\nPLATAFORMAS: 25 e 26')
 			print('\nTARIFA DE EMBARQUE R$0,85')
 		#
 		elif valores['-NOME-'].lower() in cidade_4 and valores['-NOME-'].lower() in tarifa_2:
-			print('EMPRESA: VIAÇÃO PROGRESSO - GUICHÊ: 30\n\nCONTATOS: (32) 3215-5020 / (32) 3216-2975 (PANTUR) /  (32) 3025-3936 (ZÉ KODAK)\n\nSITE: https://www.viacaoprogresso.com.br\n\nFUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n\nPLATAFORMAS: 25 e 26')
+			print('EMPRESA: VIAÇÃO PROGRESSO - GUICHÊ: 30\n\nCONTATOS:\n	GUICHÊ:(32) 3215-5020\n	PANTUR:(32) 3216-2975\n	LOJA DO ZÉ KODAK: (32) 3025-3936\n\nSITE: https://www.viacaoprogresso.com.br\n\nFUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n\nPLATAFORMAS: 25 e 26')
 			print('\nTARIFA DE EMBARQUE R$1,45')
 		#
 		elif valores['-NOME-'].lower() in cidade_4 and valores['-NOME-'].lower() in tarifa_3:
-			print('EMPRESA: VIAÇÃO PROGRESSO - GUICHÊ: 30\n\nCONTATOS: (32) 3215-5020 / (32) 3216-2975 (PANTUR) /  (32) 3025-3936 (ZÉ KODAK)\n\nSITE: https://www.viacaoprogresso.com.br\n\nFUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n\nPLATAFORMAS: 25 e 26')
+			print('EMPRESA: VIAÇÃO PROGRESSO - GUICHÊ: 30\n\nCONTATOS:\n	GUICHÊ:(32) 3215-5020\n	PANTUR:(32) 3216-2975\n	LOJA DO ZÉ KODAK: (32) 3025-3936\n\nSITE: https://www.viacaoprogresso.com.br\n\nFUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n\nPLATAFORMAS: 25 e 26')
 			print('\nTARIFA DE EMBARQUE R$2,55')
 		elif valores['-NOME-'].lower() in cidade_4:
-			print('EMPRESA: VIAÇÃO PROGRESSO - GUICHÊ: 30\n\nCONTATOS: (32) 3215-5020 / (32) 3216-2975 (PANTUR) /  (32) 3025-3936 (ZÉ KODAK)\n\nSITE: https://www.viacaoprogresso.com.br\n\nFUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n\nPLATAFORMAS: 25 e 26')
+			print('EMPRESA: VIAÇÃO PROGRESSO - GUICHÊ: 30\n\nCONTATOS:\n	GUICHÊ:(32) 3215-5020\n	PANTUR:(32) 3216-2975\n	LOJA DO ZÉ KODAK: (32) 3025-3936\n\nSITE: https://www.viacaoprogresso.com.br\n\nFUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n\nPLATAFORMAS: 25 e 26')
 			print('\nTARIFA DE EMBARQUE R$5,25')
 		#
 		#VIAÇÃO UNIDA:
 		#
 		elif valores['-NOME-'].lower() in cidade_5 and valores['-NOME-'].lower() in tarifa_1:
-			print('EMPRESA: VIAÇÃO UNIDA - GUICHÊS: 17, 18 e 19\n\nCONTATO: (32) 3215-3427\n\nSITE: https://unidamansur.queropassagem.com.br\n\nFUNCIONAMENTO: seg - sab 05h15 - 11h30 / 12h30 - 21h30 / 22h30 - 23h\n\ndom 07h - 11h30 / 12h30 - 21h30 / 22h30 - 23h\n\nPLATAFORMA: 23')
+			print('EMPRESA: VIAÇÃO UNIDA - GUICHÊS: 17, 18 e 19\n\nCONTATO: (32) 3215-3427\n\nSITE: https://unidamansur.queropassagem.com.br\n\nFUNCIONAMENTO:\n	seg - sab 05h15 - 11h30 / 12h30 - 21h30 / 22h30 - 23h\n	dom 07h - 11h30 / 12h30 - 21h30 / 22h30 - 23h\n\nPLATAFORMA: 23')
 			print('\nTARIFA DE EMBARQUE R$0,85')
 		#
 		elif valores['-NOME-'].lower() in cidade_5 and valores['-NOME-'].lower() in tarifa_2:
-			print('EMPRESA: VIAÇÃO UNIDA - GUICHÊS: 17, 18 e 19\n\nCONTATO: (32) 3215-3427\n\nSITE: https://unidamansur.queropassagem.com.br\n\nFUNCIONAMENTO: seg - sab 05h15 - 11h30 / 12h30 - 21h30 / 22h30 - 23h\n\ndom 07h - 11h30 / 12h30 - 21h30 / 22h30 - 23h\n\nPLATAFORMA: 23')
+			print('EMPRESA: VIAÇÃO UNIDA - GUICHÊS: 17, 18 e 19\n\nCONTATO: (32) 3215-3427\n\nSITE: https://unidamansur.queropassagem.com.br\n\nFUNCIONAMENTO:\n	seg - sab 05h15 - 11h30 / 12h30 - 21h30 / 22h30 - 23h\n	dom 07h - 11h30 / 12h30 - 21h30 / 22h30 - 23h\n\nPLATAFORMA: 23')
 			print('\nTARIFA DE EMBARQUE R$1,45')
 		#
 		elif valores['-NOME-'].lower() in cidade_5 and valores['-NOME-'].lower() in tarifa_3:
-			print('EMPRESA: VIAÇÃO UNIDA - GUICHÊS: 17, 18 e 19\n\nCONTATO: (32) 3215-3427\n\nSITE: https://unidamansur.queropassagem.com.br\n\nFUNCIONAMENTO: seg - sab 05h15 - 11h30 / 12h30 - 21h30 / 22h30 - 23h\n\ndom 07h - 11h30 / 12h30 - 21h30 / 22h30 - 23h\n\nPLATAFORMA: 23')
+			print('EMPRESA: VIAÇÃO UNIDA - GUICHÊS: 17, 18 e 19\n\nCONTATO: (32) 3215-3427\n\nSITE: https://unidamansur.queropassagem.com.br\n\nFUNCIONAMENTO:\n	seg - sab 05h15 - 11h30 / 12h30 - 21h30 / 22h30 - 23h\n	dom 07h - 11h30 / 12h30 - 21h30 / 22h30 - 23h\n\nPLATAFORMA: 23')
 			print('\nTARIFA DE EMBARQUE R$2,55')
 		#
 		elif valores['-NOME-'].lower() in cidade_5 and valores['-NOME-'].lower() in tarifa_4:
-			print('EMPRESA: VIAÇÃO UNIDA - GUICHÊS: 17, 18 e 19\n\nCONTATO: (32) 3215-3427\n\nSITE: https://unidamansur.queropassagem.com.br\n\nFUNCIONAMENTO: seg - sab 05h15 - 11h30 / 12h30 - 21h30 / 22h30 - 23h\n\ndom 07h - 11h30 / 12h30 - 21h30 / 22h30 - 23h\n\nPLATAFORMA: 23')
+			print('EMPRESA: VIAÇÃO UNIDA - GUICHÊS: 17, 18 e 19\n\nCONTATO: (32) 3215-3427\n\nSITE: https://unidamansur.queropassagem.com.br\n\nFUNCIONAMENTO:\n	seg - sab 05h15 - 11h30 / 12h30 - 21h30 / 22h30 - 23h\n	dom 07h - 11h30 / 12h30 - 21h30 / 22h30 - 23h\n\nPLATAFORMA: 23')
 			print('\nTARIFA DE EMBARQUE R$5,25')
 		#
 		#VIAÇÃO TRANSUR:
 		#
 		elif valores['-NOME-'].lower() in cidade_6 and valores['-NOME-'].lower() in tarifa_2:
-			print('EMPRESA: VIAÇÃO TRANSUR - GUICHÊS: 09 e 10\n\nCONTATO: (32) 3218-6313\n\nSITE: https://https://www.transur.com.br/horarios_preco\n\nFUNCIONAMENTO: DIARIAMENTE 06h30 - 19h - PLATAFORMA: 17')
+			print('EMPRESA: VIAÇÃO TRANSUR - GUICHÊS: 09 e 10\n\nCONTATO: (32) 3218-6313\n\nSITE: https://https://www.transur.com.br/horarios_preco\n\nFUNCIONAMENTO: DIARIAMENTE 06h30 - 19h\n\nPLATAFORMA: 17')
 			print('\nTARIFA DE EMBARQUE R$1,45')
 		#
 		elif valores['-NOME-'].lower() in cidade_6 and valores['-NOME-'].lower() in tarifa_3:
-			print('EMPRESA: VIAÇÃO TRANSUR - GUICHÊS: 09 e 10\n\nCONTATO: (32) 3218-6313\n\nSITE: https://https://www.transur.com.br/horarios_preco\n\nFUNCIONAMENTO: DIARIAMENTE 06h30 - 19h - PLATAFORMA: 17')
+			print('EMPRESA: VIAÇÃO TRANSUR - GUICHÊS: 09 e 10\n\nCONTATO: (32) 3218-6313\n\nSITE: https://https://www.transur.com.br/horarios_preco\n\nFUNCIONAMENTO: DIARIAMENTE 06h30 - 19h\n\nPLATAFORMA: 17')
 			print('\nTARIFA DE EMBARQUE R$2,55')
 		#
 		elif valores['-NOME-'].lower() in cidade_6 and valores['-NOME-'].lower() in tarifa_4:
-			print('EMPRESA: VIAÇÃO TRANSUR - GUICHÊS 09 e 10\n\nCONTATO: (32) 3218-6313\n\nSITE: https://https://www.transur.com.br/horarios_preco\n\nFUNCIONAMENTO: DIARIAMENTE: 06h30 - 19h - PLATAFORMA: 17')
+			print('EMPRESA: VIAÇÃO TRANSUR - GUICHÊS: 09 e 10\n\nCONTATO: (32) 3218-6313\n\nSITE: https://https://www.transur.com.br/horarios_preco\n\nFUNCIONAMENTO: DIARIAMENTE 06h30 - 19h\n\nPLATAFORMA: 17')
 			print('\nTARIFA DE EMBARQUE R$5,25')
 		#
 		#VIAÇÃO BASSAMAR:
@@ -232,14 +232,12 @@ while True:
 			print('\nTARIFA DE EMBARQUE R$0,85')
 		#
 		elif valores['-NOME-'].lower() in cidade_7 and valores['-NOME-'].lower() in tarifa_2:
-			print('EMPRESA: VIAÇÃO BASSAMAR - GUICHÊ: 31\n\nCONTATO: (32) 3215-5020\n\nSITE: https://www.viacaobassamar.queropassagem.com.br\n\nFUNCIONAMENTO:seg - sab 06h - 19h / dom 07h - 22h\n\nPLATAFORMAS: 19, 20, e 21')
+			print('EMPRESA: VIAÇÃO BASSAMAR - GUICHÊ: 31\n\nCONTATO: (32) 3215-5020\n\nSITE: https://www.viacaobassamar.queropassagem.com.br\n\nFUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n\nPLATAFORMAS: 19, 20, e 21')
 			print('\nTARIFA DE EMBARQUE R$1,45')
 		#
 		elif valores['-NOME-'].lower() in cidade_7 and valores['-NOME-'].lower() in tarifa_3:
 			print('EMPRESA: VIAÇÃO BASSAMAR - GUICHÊ: 31\n\nCONTATO: (32) 3215-5020\n\nSITE: https://www.viacaobassamar.queropassagem.com.br\n\nFUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n\nPLATAFORMAS: 19, 20, e 21')
 			print('\nTARIFA DE EMBARQUE R$2,55')
-		#
-		elif valores['-NOME-'].lower() in cidade_7 and valores['-NOME-'].lower() in tarifa_4:
 			print('EMPRESA: VIAÇÃO BASSAMAR - GUICHÊ: 31\n\nCONTATO: (32) 3215-5020\n\nSITE: https://www.viacaobassamar.queropassagem.com.br\n\nFUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n\nPLATAFORMAS: 19, 20, e 21')
 			print('\nTARIFA DE EMBARQUE R$5,25')
 		#
@@ -250,7 +248,7 @@ while True:
 			print('\nTARIFA DE EMBARQUE R$1,45')
 		#
 		elif valores['-NOME-'].lower() in cidade_8 and valores['-NOME-'].lower() in tarifa_4:
-			print('EMPRESA: VIAÇÃO RIO DOCE - GUICHÊ: 32\n\nCONTATO: (32) 3215-8828\n\nSITE: http://www.viacaoriodoce.com.br/\n\nFUNCIONAMENTO: DIARIAMENTE 07h - 21h30\n\nPLATAFORMA: 24')
+			print('EMPRESA: VIAÇÃO RIO DOCE - GUICHÊ: 32\n\nCONTATO: (32)3215-8828\n\nSITE: http://www.viacaoriodoce.com.br/\n\nFUNCIONAMENTO: DIARIAMENTE 07h - 21h30\n\nPLATAFORMA: 24')
 			print('\nTARIFA DE EMBARQUE R$5,25')
 		#
 		#VIAÇÃO SANTA CRUZ / SUL MINAS:
@@ -435,8 +433,38 @@ while True:
 		elif valores['-NOME-'].lower() == 'p9' or valores['-NOME-'].lower() == 'p 9' or valores['-NOME-'].lower() == 'p09' or valores['-NOME-'].lower() == 'p 09':
 			print('>>> P8:\n\nCÓDIGO REFERENTE AO SETOR PERTINENTE DO ALMOXARIFADO NO TERMINAL RODOVIÁRIO DE JUIZ DE FORA')
 		#
+		#RELAÇÃO DOS GUICHÊS E SEUS DADOS...
+		#
 		elif valores['-NOME-'].lower() == 'saritur' or valores['-NOME-'].lower() == 'Saritur' or valores['-NOME-'].lower() == 'Coordenadas' or valores['-NOME-'].lower() == 'coordenadas' or valores['-NOME-'].lower() == 'Atual' or valores['-NOME-'].lower() == 'atual':
-			print('EMPRESA: VIAÇÃO COORDENADAS  -  ATUAL - SARITUR\n\nCONTATO: (32) 3112-0423 - GUICHÊS: 04 e 05\n\nSITE: https://www.saritur.queropassagem.com.br\n\nFUNCIONAMENTO: dom a sex das 06h30 - 00h\nsab de 06h30 - 19h\n\nPLATAFORMA: 22')
+			print('EMPRESA: VIAÇÃO COORDENADAS  -  ATUAL - SARITUR\n\nCONTATO: (32) 3112-0423 - GUICHÊS: 04 e 05\n\nSITE: https://www.saritur.com.br/\n\nFUNCIONAMENTO: dom a sex das 06h30 - 00h\nsab de 06h30 - 19h\n\nPLATAFORMA: 22')
+		#
+		elif valores['-NOME-'].lower() == 'util' or valores['-NOME-'].lower() == 'brisa' or valores['-NOME-'].lower() == 'guanabara' or valores['-NOME-'].lower() == 'sampaio' or valores['-NOME-'].lower() == 'gypsyy' or valores['-NOME-'].lower() == 'atual':
+			print('EMPRESA: VIAÇÃO UTIL / BRISA / SAMPAIO / GYPSYY / GUANABARA\n\nGUICHÊS: 20 à 24 - CONTATOS: 0800 883 8830\n\nSITE:\n\n	UTIL: https://www.util.com.br/\n	GUANABARA: https://www.viajeguanabara.com.br/\n	SAMPAIO: https://viacaosampaio.com.br/\n\nPLATAFORMAS: 13, 14, e 15')
+		#
+		elif valores['-NOME-'].lower() == 'cometa' or valores['-NOME-'].lower() == 'catarinense' or valores['-NOME-'].lower() == 'expresso do sul' or valores['-NOME-'].lower() == '1001':
+			print('EMPRESA: VIAÇÃO COMETA / CATARINENSE / EXPRESSO DO SUL / 1001\n\nGUICHÊS 15 e 16 - CONTATO: 4004-9600 e 0800 942 0030\n\nSITE:\n	COMETA: https://www.cometa.com.br\n	CATARINENSE: https://www.catarinense.com.br\n	EXPRESSO DO SUL: https://www.expressodosul.com.br\n	1001: https://www.autoviacao1001.com.br\n\nFUNCIONAMENTO: DIARIAMENTE 07h30 - 23h30\n\nPLATAFORMAS: 10, 11 e 12')
+		#
+		elif valores['-NOME-'].lower() == 'progresso' or valores['-NOME-'].lower() == 'viação progresso' or valores['-NOME-'].lower() == 'viaçao progresso' or valores['-NOME-'].lower() == 'viacao progresso':
+			print('EMPRESA: VIAÇÃO PROGRESSO - GUICHÊ: 30\n\nCONTATOS:\n	GUICHÊ:(32) 3215-5020\n	PANTUR:(32) 3216-2975\n	LOJA DO ZÉ KODAK: (32) 3025-3936\n\nSITE: https://www.viacaoprogresso.com.br\n\nFUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n\nPLATAFORMAS: 25 e 26')
+		#
+		elif valores['-NOME-'].lower() == 'unida' or valores['-NOME-'].lower() == 'viação unida' or valores['-NOME-'].lower() == 'unida mansur' or valores['-NOME-'].lower() == 'unidamansur':
+			print('EMPRESA: VIAÇÃO UNIDA - GUICHÊS: 17, 18 e 19\n\nCONTATO: (32) 3215-3427\n\nSITE: https://unidamansur.queropassagem.com.br\n\nFUNCIONAMENTO:\n	seg - sab 05h15 - 11h30 / 12h30 - 21h30 / 22h30 - 23h\n	dom 07h - 11h30 / 12h30 - 21h30 / 22h30 - 23h\n\nPLATAFORMA: 23')
+		#
+		elif valores['-NOME-'].lower() == 'transur' or valores['-NOME-'].lower() == 'viação transur':
+			print('EMPRESA: VIAÇÃO TRANSUR - GUICHÊS: 09 e 10\n\nCONTATO: (32) 3218-6313\n\nSITE: https://https://www.transur.com.br/horarios_preco\n\nFUNCIONAMENTO: DIARIAMENTE 06h30 - 19h\n\nPLATAFORMA: 17')
+		#
+		elif valores['-NOME-'].lower() == 'bassamar' or valores['-NOME-'].lower() == 'viação bassamar':
+			print('EMPRESA: VIAÇÃO BASSAMAR - GUICHÊ: 31\n\nCONTATO: (32) 3215-5020\n\nSITE: https://www.viacaobassamar.queropassagem.com.br\n\nFUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n\nPLATAFORMAS: 19, 20, e 21')
+		#
+		elif valores['-NOME-'].lower() == 'rio doce' or valores['-NOME-'].lower() == 'riodoce':
+			print('EMPRESA: VIAÇÃO RIO DOCE - GUICHÊ: 32\n\nCONTATO: (32)3215-8828\n\nSITE: http://www.viacaoriodoce.com.br/\n\nFUNCIONAMENTO: DIARIAMENTE 07h - 21h30\n\nPLATAFORMA: 24')
+		#
+		elif valores['-NOME-'].lower() == 'rio doce' or valores['-NOME-'].lower() == 'riodoce':
+			print('EMPRESA: VIAÇÃO RIO DOCE - GUICHÊ: 32\n\nCONTATO: (32)3215-8828\n\nSITE: http://www.viacaoriodoce.com.br/\n\nFUNCIONAMENTO: DIARIAMENTE 07h - 21h30\n\nPLATAFORMA: 24')
+		#
+		elif valores['-NOME-'].lower() == 'santa cruz' or valores['-NOME-'].lower() == 'snta cruz'  or valores['-NOME-'].lower() == 'sntacruz'  or valores['-NOME-'].lower() == 'santacruz' or valores['-NOME-'].lower() == 'sul minas' or valores['-NOME-'].lower() == 'sulminas':
+			print('EMPRESA: VIAÇÃO SANTA CRUZ  -  SUL MINAS\n\nCONTATO: (32) 3215-5020  -  GUICHÊ: 29\n\nSITE: https://viajesantacruz.com.br/\n\nFUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n\nPlataforma: 16')
+		#
 		#EM CASO DE NÃO CONFORMIDADE...
 		else: 
 			print('\nCONFIRA O NOME DA PESQUISA, E TENTE NOVAMENTE!\n\nPOSSIBILIDADE DE NÃO HAVER EMBARQUE PARA ESSE DESTINO NO TRJDF!\n\nPOSSIBILIDADE DE NÃO CONSTAR NO BANCO DE DADOS DO PROGRAMA\n\nCLIQUE EM LIMPAR PARA NOVA PESQUISA!')
