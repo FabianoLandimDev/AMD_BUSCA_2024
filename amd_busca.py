@@ -59,7 +59,7 @@ janela = janela_inicial()
 #
 #VIAÇÃO PROGRESSO:
 #
-cidade_4 = ['afonso arinos', 'além paraíba', 'alem paraiba', 'além paraiba', 'alem paraíba', 'barra mansa', 'barra do piraí', ' bdp', 'barra do pirai', 'levy gasparian', 'matias barbosa', 'paraíba do sul', 'paraiba do sul', 'pds', 'paraibuna', 'pirapitinga', 'serraria', 'três rios', 'tres rios', '3 rios', 'vassouras', 'volta redonda']
+cidade_4 = ['afonso arinos', 'além paraíba', 'alem paraiba', 'além paraiba', 'alem paraíba', 'barra mansa', 'barra do piraí', ' bdp', 'barra do pirai', 'levy gasparian', 'matias barbosa', 'paraíba do sul', 'paraiba do sul', 'pds', 'pirapitinga', 'serraria', 'três rios', 'tres rios', '3 rios', 'vassouras', 'volta redonda']
 #
 #VIAÇÃO SARITUR / COORDENADAS:
 #
@@ -128,7 +128,7 @@ tarifa_1 = ['aeroporto', '*aeroporto', 'goianá', 'goiana', 'conceição do rio 
 #
 #Referente ao valor da tarifa de R$1,45
 #
-tarifa_2 = ['afonso arinos', 'bela vista de minas', 'bvdm', 'bias fortes', 'bicas', '*bicas', '**bicas', 'boa vista', 'bom jardim de minas', 'bjdm', '*bom jardim de minas', '*bjdm', 'cachoeira', 'caranguejo', 'chiador', 'conceiçao', 'conceicao', 'conceição', 'correia de almeida', 'cda', 'faixa azul', 'guarani', 'guaraní', 'guarará', 'guarara', '*guarará', '*guarara', 'lima duarte', 'mar de espanha', 'maripá de minas', 'maripa de minas', '*maripá de minas', '*maripa de minas', 'mdm', '*mdm', 'olaria', 'orvalho', 'palmital','paraibuna', 'pedro teixeira', 'pequeri', 'pequerí', 'peróbas', 'perobas', 'piau', 'ponte preta', '*ponte preta', 'rio novo', 'rio pomba', 'rochedo de minas', 'rdm', 'santa helena de minas', 'shdm', '*santa helena de minas', '*shdm', 'snt helena de minas',  'santo antônio aventureiro', 'santo antonio aventureiro', 'snt antonio aventureiro', 'snt aventureiro', 'saa', 'santos dumont', 'são joão da serra', 'sao joao da serra', 'sjds', 'são joão nepomuceno', 'sao joao nepomuceno', 'sjn', 'simão pereira', 'simao pereira', 'sossego', 'sôssego', '*sôssego', '*sossego', 'tabuleiro']
+tarifa_2 = ['afonso arinos', 'bela vista de minas', 'bvdm', 'bias fortes', 'bicas', '*bicas', '**bicas', 'boa vista', 'bom jardim de minas', 'bjdm', '*bom jardim de minas', '*bjdm', 'cachoeira', 'caranguejo', 'chiador', 'conceiçao', 'conceicao', 'conceição', 'correia de almeida', 'cda', 'faixa azul', 'guarani', 'guaraní', 'guarará', 'guarara', '*guarará', '*guarara', 'lima duarte', 'mar de espanha', 'maripá de minas', 'maripa de minas', '*maripá de minas', '*maripa de minas', 'mdm', '*mdm', 'olaria', 'orvalho', 'palmital','paraíba do sul', 'paraiba do sul', 'pds', 'pedro teixeira', 'pequeri', 'pequerí', 'peróbas', 'perobas', 'piau', 'ponte preta', '*ponte preta', 'rio novo', 'rio pomba', 'rochedo de minas', 'rdm', 'santa helena de minas', 'shdm', '*santa helena de minas', '*shdm', 'snt helena de minas',  'santo antônio aventureiro', 'santo antonio aventureiro', 'snt antonio aventureiro', 'snt aventureiro', 'saa', 'santos dumont', 'são joão da serra', 'sao joao da serra', 'sjds', 'são joão nepomuceno', 'sao joao nepomuceno', 'sjn', 'simão pereira', 'simao pereira', 'sossego', 'sôssego', '*sôssego', '*sossego', 'tabuleiro']
 #
 #Referente ao valor da tarifa de R$2,55
 #
@@ -274,35 +274,34 @@ while True:
 		#VIAÇÃO PARAIBUNA:
 		#
 		elif valores['-NOME-'].lower() in cidade_11 and valores['-NOME-'].lower() in tarifa_1:
-			print('EMPRESA: VIAÇÃO PARAIBUNA - GUICHÊS: 12 e 13\n\nCONTATO: (32) 2101-3314 / (32) 3216-2975(PANTUR) / (32)2101-3333\n\nSITE: https://www.paraibunatransportes.com.br/\n\nFUNCIONAMENTO: seg à qui: 05h45 - 10h30 - 11h30 às 18h\n\nsex: 05h45 - 10h30 - 11h30 - 14h e 15h15 - 19h\n\nsab e dom: 05h15 - 10h30 - 11h30- 18h\n\nPLATAFORMA: 18')
+			print('	EMPRESA: VIAÇÃO PARAIBUNA - GUICHÊS: 12 e 13\n\nCONTATO: (32) 2101-3314 / (32) 3216-2975(PANTUR) / (32)2101-3333\n\nSITE: https://www.paraibunatransportes.com.br/\n\nFUNCIONAMENTO:\n\n	seg à qui: 05h45 - 10h30 - 11h30 às 18h\n	sex: 05h45 - 10h30 - 11h30 - 14h e 15h15 - 19h\n	sab e dom: 05h15 - 10h30 - 11h30- 18h\n\nPLATAFORMA: 18')
 			print('\nTARIFA DE EMBARQUE R$0,85')
 		#
 		elif valores['-NOME-'].lower() in cidade_11 and valores['-NOME-'].lower() in tarifa_2:
-			print('EMPRESA: VIAÇÃO PARAIBUNA - GUICHÊS: 12 e 13\n\nCONTATO: (32) 2101-3314 / (32) 3216-2975(PANTUR) / (32) 2101-3333\n\nSITE: https://www.paraibunatransportes.com.br/\n\nFUNCIONAMENTO: seg à qui: 05h45 - 10h30 - 11h30 às 18h\n\nsex: 05h45 - 10h30 - 11h30 - 14h e 15h15 - 19h\n\nsab e dom: 05h15 - 10h30 - 11h30- 18h\n\nPLATAFORMA: 18')
+			print('	EMPRESA: VIAÇÃO PARAIBUNA - GUICHÊS: 12 e 13\n\nCONTATO: (32) 2101-3314 / (32) 3216-2975(PANTUR) / (32)2101-3333\n\nSITE: https://www.paraibunatransportes.com.br/\n\nFUNCIONAMENTO:\n\n	seg à qui: 05h45 - 10h30 - 11h30 às 18h\n	sex: 05h45 - 10h30 - 11h30 - 14h e 15h15 - 19h\n	sab e dom: 05h15 - 10h30 - 11h30- 18h\n\nPLATAFORMA: 18')
 			print('\nTARIFA DE EMBARQUE R$1,45')
 		#
 		elif valores['-NOME-'].lower() in cidade_11 and valores['-NOME-'].lower() in tarifa_3:
-			print('EMPRESA: VIAÇÃO PARAIBUNA - GUICHÊS: 12 e 13\n\nCONTATO: (32) 2101-3314 / (32) 3216-2975(PANTUR) / (32)2101-3333\n\nSITE\n\nSITE: https://www.paraibunatransportes.com.br/\n\nFUNCIONAMENTO: seg à qui: 05h45 - 10h30 - 11h30 às 18h\n\nsex: 05h45 - 10h30 - 11h30 - 14h e 15h15 - 19h\n\nsab e dom: 05h15 - 10h30 - 11h30- 18h\n\nPLATAFORMA: 18')
-			print('\nTARIFA DE EMBARQUE R$2,55')
+			print('	EMPRESA: VIAÇÃO PARAIBUNA - GUICHÊS: 12 e 13\n\nCONTATO: (32) 2101-3314 / (32) 3216-2975(PANTUR) / (32)2101-3333\n\nSITE: https://www.paraibunatransportes.com.br/\n\nFUNCIONAMENTO:\n\n	seg à qui: 05h45 - 10h30 - 11h30 às 18h\n	sex: 05h45 - 10h30 - 11h30 - 14h e 15h15 - 19h\n	sab e dom: 05h15 - 10h30 - 11h30- 18h\n\nPLATAFORMA: 18')
 		#
 		elif valores['-NOME-'].lower() in cidade_11 and valores['-NOME-'].lower() in tarifa_4:
-			print('EMPRESA: VIAÇÃO PARAIBUNA - GUICHÊS: 12 e 13\n\nCONTATO: (32) 2101-3314 / (32) 3216-2975(PANTUR) / (32)2101-3333\n\nSITE: https://www.paraibunatransportes.com.br/\n\nFUNCIONAMENTO: seg à qui: 05h45 - 10h30 - 11h30 às 18h\n\nsex: 05h45 - 10h30 - 11h30 - 14h e 15h15 - 19h\n\nsab e dom: 05h15 - 10h30 - 11h30- 18h\n\nPLATAFORMA: 18')
+			print('	EMPRESA: VIAÇÃO PARAIBUNA - GUICHÊS: 12 e 13\n\nCONTATO: (32) 2101-3314 / (32) 3216-2975(PANTUR) / (32)2101-3333\n\nSITE: https://www.paraibunatransportes.com.br/\n\nFUNCIONAMENTO:\n\n	seg à qui: 05h45 - 10h30 - 11h30 às 18h\n	sex: 05h45 - 10h30 - 11h30 - 14h e 15h15 - 19h\n	sab e dom: 05h15 - 10h30 - 11h30- 18h\n\nPLATAFORMA: 18')
 			print('\nTARIFA DE EMBARQUE R$5,25')
 		#
 		#VIAÇÂO EXPRESSO UNIÂO PLUMA:
 		#
 		elif valores['-NOME-'].lower() in cidade_12 and valores['-NOME-'].lower() in tarifa_4:
-			print('EMPRESA: VIAÇÃO EXPRESSO UNIÃO / PLUMA - GUICHÊ: 25\n\nCONTATO: (32) 98710-6414\n\nSITE: https://www.expressouniao.com.br\n\nFUNCIONAMENTO: seg - sex 09h - 18h / sab dom feriados 14h - 18h (Intervalo: 12h30 - 13h30)\n\nPLATAFORMA: 29')
+			print('EMPRESA: VIAÇÃO EXPRESSO UNIÃO / PLUMA - GUICHÊ: 25\n\nCONTATO: (32) 98710-6414\n\nSITE: https://www.expressouniao.com.br\n\nFUNCIONAMENTO:\n\n	seg - sex 09h - 18h\n	sab dom feriados 14h - 18h (Intervalo: 12h30 - 13h30)\n\nPLATAFORMA: 29')
 			print('\nTARIFA DE EMBARQUE R$5,25')
 		#
 		#VIAÇÃO UNICA:
 		#
 		elif valores['-NOME-'].lower() in cidade_13 and valores['-NOME-'].lower() in tarifa_3:
-			print('EMPRESA: VIAÇÃO UNICA FACIL - GUICHÊ: 14\n\nCONTATOS: (24) 2244-1642 OU (32) 3216-2975 (PANTUR)\n\nSITE: http://www.unica-facil.com.br/\n\nFUNCIONAMENTO: DIARIAMENTE 06h30 - 12h / 14h - 18h30\n\nPLATAFORMA: 19')
+			print('	EMPRESA: VIAÇÃO UNICA FACIL - GUICHÊ: 14\n\nCONTATOS:\n\n	Central: (24) 2244-1642(32)\n	PANTUR: 3216-2975\n\nSITE: http://www.unica-facil.com.br/\n\nFUNCIONAMENTO: DIARIAMENTE 06h30 - 12h / 14h - 18h30\n\nPLATAFORMA: 19')
 			print('\nTARIFA DE EMBARQUE R$2,55')
 		#
 		elif valores['-NOME-'].lower() in cidade_13 and valores['-NOME-'].lower() in tarifa_4:
-			print('EMPRESA: VIAÇÃO UNICA FACIL - GUICHÊ: 14\n\nCONTATOS: (24) 2244-1642 OU (32) 3216-2975 (PANTUR)\n\nSITE: http://www.unica-facil.com.br/\n\nFUNCIONAMENTO: DIARIAMENTE 06h30 - 12h / 14h - 18h30\n\nPLATAFORMA: 19')
+			print('	EMPRESA: VIAÇÃO UNICA FACIL - GUICHÊ: 14\n\nCONTATOS:\n\n	Central: (24) 2244-1642(32)\n	PANTUR: 3216-2975\n\nSITE: http://www.unica-facil.com.br/\n\nFUNCIONAMENTO: DIARIAMENTE 06h30 - 12h / 14h - 18h30\n\nPLATAFORMA: 19')
 			print('\nTARIFA DE EMBARQUE R$5,25')
 		#
 		#VIAÇÃO JOSÉ MARIA RODRIGUES:
@@ -322,13 +321,13 @@ while True:
 		#VIAÇÃO ÁGUIA BRANCA:
 		#
 		elif valores['-NOME-'].lower() in cidade_15 and valores['-NOME-'].lower() in tarifa_4:
-			print('EMPRESA: VIAÇÃO ÀGUIA BRANCA - GUICHÊ 26\n\nCONTATO:(32) 98710-6414\n\nSITE: https://www.aguiabranca.com.br\n\nFUNCIONAMENTO: seg - sex 09h - 18h / sab 14h - 18h (Intervalo: 12h30 - 13h30)PLATAFORMA: 12')
+			print('	EMPRESA: VIAÇÃO ÀGUIA BRANCA - GUICHÊ 26\n\nCONTATO:(32) 98710-6414\n\nSITE: https://www.aguiabranca.com.br\n\nFUNCIONAMENTO:\n\n	seg - sex 09h - 18h\n	sab 14h - 18h (Intervalo: 12h30 - 13h30)\n\nPLATAFORMA: 12')
 			print('\nTARIFA DE EMBARQUE R$5,25')
 		#
 		#VIAÇÃO ITAPEMIRIM:
 		#
 		elif valores['-NOME-'].lower() in cidade_16:
-			print('EMPRESA: VIAÇÃO ITAPEMIRIM - GUICHÊ: 29\n\nCONTATOS: (32)3215-5020 \n\nFUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n\nPLATAFORMA: 28')
+			print('	EMPRESA: VIAÇÃO ITAPEMIRIM - GUICHÊ: 29\n\nCONTATOS: (32)3215-5020 \n\nFUNCIONAMENTO:\n\n	seg - sab 06h - 19h\n	dom 07h - 22h\n\nPLATAFORMA: 28')
 			print('\nTARIFA DE EMBARQUE R$5,25')
 		#
 		# LISTA DE ORGÃOS PÚBLICOS,LOJAS, E GUICHÊS NO INTERIOR DO TRJFA:
@@ -370,7 +369,7 @@ while True:
 			print(' * ADMINISTRATIVO TERMINAL RODOVIÁRIO MIGUEL MANSUR * \n\nATENDIMENTO: seg à sex 9h às 18h\n\nEndereço: Av Brasil nº 9501, Bairro São Dimas Cep: 36080-060\n\n(OBS: FAVOR ANOTAR RECADO, CASO SEJA FINAL DE SEMANA OU FERIADO)')
 		#
 		elif valores['-NOME-'].lower() == 'mensalista' or valores['-NOME-'].lower() == 'estacionamento' or valores['-NOME-'].lower() == 'mensalidade estacionamento' or valores['-NOME-'].lower() == 'estacionamento pago' or valores['-NOME-'].lower() == 'estacionamento mensalista':
-			print('		=-=-=- MENSALISTA ESTACIONAMENTO =-=-=-\n\nDocumentos Necessários:\n> CNH\n> Documento do veículo\n> Comprovante de residência\n> Contatos (telefone e e-mail)\n\nValor da mensalidade: R$ 145,00\n\nPermanência: Mínimo de 03 meses\n\nProcurar o setor ADMINISTRATIVO da AMD ASERVICES seg a sex de 9h às 18h')
+			print('	=-=-=- MENSALISTA ESTACIONAMENTO =-=-=-\n\nDocumentos Necessários:\n\n	> CNH\n	> Documento do veículo\n	> Comprovante de residência\n	> Contatos (telefone e e-mail)\n\nValor da mensalidade: R$ 145,00\n\nPermanência: Mínimo de 03 meses\n\nProcurar o setor ADMINISTRATIVO da AMD ASERVICES seg a sex de 9h às 18h')
 		#
 		elif valores['-NOME-'].lower() == 'rei do mate' or valores['-NOME-'].lower() == 'rdm' or valores['-NOME-'].lower() == 'rm':
 			print('		-=-=-= LANCHONETE REI DO MATE -=-=-=\n\nLocal: Terminal Rodoviário Miguel Mansur\n\nFuncionamento: 24h (exceto nas madrugadas de sab para dom)\n\nContato: (32) 99958-2881\n\nResponsável: Fabiano')
@@ -404,6 +403,7 @@ while True:
 		#
 		elif valores['-NOME-'].lower() == 'padaria' or valores['-NOME-'].lower() == 'estacao mineira' or valores['-NOME-'].lower() == 'estação mineira' or valores['-NOME-'].lower() == 'estaçao mineira':
 			print('		-=-=-= PADARIA ESTAÇÃO MINEIRA -=-=-=\n\nLocal: Terminal Rodoviário Miguel Mansur\n\nFuncionamento: 24h (exceto nas madrugadas de sab para dom)\n\nContato: (**) *****-****\n\nResponsável: Wagner / Adriana')
+		#
 		#GLOSSÁRIO TERMINAL RODOVIÁRIO...
 		#
 		elif valores['-NOME-'].lower() == 'p1' or valores['-NOME-'].lower() == 'p 1' or valores['-NOME-'].lower() == 'p01' or valores['-NOME-'].lower() == 'p 01':
@@ -459,11 +459,32 @@ while True:
 		elif valores['-NOME-'].lower() == 'rio doce' or valores['-NOME-'].lower() == 'riodoce':
 			print('EMPRESA: VIAÇÃO RIO DOCE - GUICHÊ: 32\n\nCONTATO: (32)3215-8828\n\nSITE: http://www.viacaoriodoce.com.br/\n\nFUNCIONAMENTO: DIARIAMENTE 07h - 21h30\n\nPLATAFORMA: 24')
 		#
-		elif valores['-NOME-'].lower() == 'rio doce' or valores['-NOME-'].lower() == 'riodoce':
-			print('EMPRESA: VIAÇÃO RIO DOCE - GUICHÊ: 32\n\nCONTATO: (32)3215-8828\n\nSITE: http://www.viacaoriodoce.com.br/\n\nFUNCIONAMENTO: DIARIAMENTE 07h - 21h30\n\nPLATAFORMA: 24')
-		#
 		elif valores['-NOME-'].lower() == 'santa cruz' or valores['-NOME-'].lower() == 'snta cruz'  or valores['-NOME-'].lower() == 'sntacruz'  or valores['-NOME-'].lower() == 'santacruz' or valores['-NOME-'].lower() == 'sul minas' or valores['-NOME-'].lower() == 'sulminas':
 			print('EMPRESA: VIAÇÃO SANTA CRUZ  -  SUL MINAS\n\nCONTATO: (32) 3215-5020  -  GUICHÊ: 29\n\nSITE: https://viajesantacruz.com.br/\n\nFUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n\nPlataforma: 16')
+		#
+		elif valores['-NOME-'].lower() == 'gontijo':
+			print('EMPRESA: VIAÇÃO GONTIJO - GUICHÊ: 27\n\nCONTATO: (32) 3215-9458\n\nSITE: https://www.gontijo.com.br/\n\nFUNCIONAMENTO:\n\n	seg- sab 08h - 20h20\n	dom - feriados 08h - 12h / 14h - 17h20\n\nPLATAFORMA: 27')
+		#
+		elif valores['-NOME-'].lower() == 'paraibuna':
+			print('EMPRESA: VIAÇÃO PARAIBUNA - GUICHÊS: 12 e 13\n\nCONTATO: (32) 2101-3314 / (32) 3216-2975(PANTUR) / (32)2101-3333\n\nSITE: https://www.paraibunatransportes.com.br/\n\nFUNCIONAMENTO:\n\n	seg à qui: 05h45 - 10h30 - 11h30 às 18h\n	sex: 05h45 - 10h30 - 11h30 - 14h e 15h15 - 19h\n	sab e dom: 05h15 - 10h30 - 11h30- 18h\n\nPLATAFORMA: 18')
+		#
+		elif valores['-NOME-'].lower() == 'união' or valores['-NOME-'].lower() == 'uniao' or valores['-NOME-'].lower() == 'expresso união' or valores['-NOME-'].lower() == 'expresso uniao' or valores['-NOME-'].lower() == 'expressounião' or valores['-NOME-'].lower() == 'expressouniao' or valores['-NOME-'].lower() == 'pluma':
+			print('EMPRESA: VIAÇÃO EXPRESSO UNIÃO / PLUMA - GUICHÊ: 25\n\nCONTATO: (32) 98710-6414\n\nSITE: https://www.expressouniao.com.br\n\nFUNCIONAMENTO:\n\n	seg - sex 09h - 18h\n	sab dom feriados 14h - 18h (Intervalo: 12h30 - 13h30)\n\nPLATAFORMA: 29')
+		#
+		elif valores['-NOME-'].lower() == 'unica':
+			print('	EMPRESA: VIAÇÃO UNICA FACIL - GUICHÊ: 14\n\nCONTATOS:\n\n	Central: (24) 2244-1642(32)\n	PANTUR: 3216-2975\n\nSITE: http://www.unica-facil.com.br/\n\nFUNCIONAMENTO: DIARIAMENTE 06h30 - 12h / 14h - 18h30\n\nPLATAFORMA: 19')
+		#
+		elif valores['-NOME-'].lower() == 'josé maria rodrigues' or valores['-NOME-'].lower() == 'jose maria rodrigues' or valores['-NOME-'].lower() == 'josemariarodrigues' or valores['-NOME-'].lower() == 'jmr':
+			print('EMPRESA: VIAÇÃO JOSÉ MARIA RODRIGUES - GUICHÊ 06 e 07\n\nCONTATO: (32)3215-4460 / (32) 3221-3232\n\nSITE: https://www.josemariarodrigues.com.br\n\nFUNCIONAMENTO: seg - qui 07h - 20h / sex, sáb e dom 07h - 21h30\n\nPLATAFORMAS: 9 e 20 (Plataforma 20 "CONEXÂO AEROPORTO")')
+		#
+		elif valores['-NOME-'].lower() == 'josé maria rodrigues' or valores['-NOME-'].lower() == 'jose maria rodrigues' or valores['-NOME-'].lower() == 'josemariarodrigues' or valores['-NOME-'].lower() == 'jmr':
+			print('EMPRESA: VIAÇÃO JOSÉ MARIA RODRIGUES - GUICHÊ 06 e 07\n\nCONTATO: (32)3215-4460 / (32) 3221-3232\n\nSITE: https://www.josemariarodrigues.com.br\n\nFUNCIONAMENTO: seg - qui 07h - 20h / sex, sáb e dom 07h - 21h30\n\nPLATAFORMAS: 9 e 20 (Plataforma 20 "CONEXÂO AEROPORTO")')
+		#
+		elif valores['-NOME-'].lower() == 'àguia branca' or valores['-NOME-'].lower() == 'aguia branca' or valores['-NOME-'].lower() == 'aguiabranca':
+			print('	EMPRESA: VIAÇÃO ÀGUIA BRANCA - GUICHÊ 26\n\nCONTATO:(32) 98710-6414\n\nSITE: https://www.aguiabranca.com.br\n\nFUNCIONAMENTO:\n\n	seg - sex 09h - 18h\n	sab 14h - 18h (Intervalo: 12h30 - 13h30)\n\nPLATAFORMA: 12')
+		#
+		elif valores['-NOME-'].lower() == 'itapemirim':
+			print('	EMPRESA: VIAÇÃO ITAPEMIRIM - GUICHÊ: 29\n\nCONTATOS: (32)3215-5020 \n\nFUNCIONAMENTO:\n\n	seg - sab 06h - 19h\n	dom 07h - 22h\n\nPLATAFORMA: 28')
 		#
 		#EM CASO DE NÃO CONFORMIDADE...
 		else: 
