@@ -6,6 +6,7 @@ import sys
 import pywin32_system32
 import keyboard
 import io
+from PIL import Image
 
 #
 # Nome_do _programa: AMD_BUSCA
