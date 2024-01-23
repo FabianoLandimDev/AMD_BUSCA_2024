@@ -323,10 +323,10 @@ while True:
 			print('	EMPRESA: VIAÇÃO ÀGUIA BRANCA - GUICHÊ 26\n\nCONTATO:(32) 98710-6414\n\nSITE: https://www.aguiabranca.com.br\n\nFUNCIONAMENTO:\n\n	seg - sex 09h - 18h\n	sab 14h - 18h (Intervalo: 12h30 - 13h30)\n\nPLATAFORMA: 12')
 			print('\nTARIFA DE EMBARQUE R$5,25')
 		#
-		#VIAÇÃO ITAPEMIRIM:
+		#VIAÇÃO ITAPEMIRIM / KAISSARA:
 		#
 		elif valores['-NOME-'].lower() in cidade_16:
-			print('	EMPRESA: VIAÇÃO ITAPEMIRIM - GUICHÊ: 29\n\nCONTATOS: (32)3215-5020 \n\nFUNCIONAMENTO:\n\n	seg - sab 06h - 19h\n	dom 07h - 22h\n\nPLATAFORMA: 28')
+			print('	EMPRESA: VIAÇÃO ITAPEMIRIM / KAISSARA - GUICHÊ: 29\n\nCONTATOS: (32)3215-5020 \n\nFUNCIONAMENTO:\n\n	seg - sab 06h - 19h\n	dom 07h - 22h\n\nPLATAFORMA: 28')
 			print('\nTARIFA DE EMBARQUE R$5,25')
 		#
 		# LISTA DE ORGÃOS PÚBLICOS,LOJAS, E GUICHÊS NO INTERIOR DO TRJFA:
@@ -437,7 +437,7 @@ while True:
 		elif valores['-NOME-'].lower() == 'saritur' or valores['-NOME-'].lower() == 'Saritur' or valores['-NOME-'].lower() == 'Coordenadas' or valores['-NOME-'].lower() == 'coordenadas' or valores['-NOME-'].lower() == 'Atual' or valores['-NOME-'].lower() == 'atual':
 			print('EMPRESA: VIAÇÃO COORDENADAS  -  ATUAL - SARITUR\n\nCONTATO: (32) 3112-0423 - GUICHÊS: 04 e 05\n\nSITE: https://www.saritur.com.br/\n\nFUNCIONAMENTO: dom a sex das 06h30 - 00h\nsab de 06h30 - 19h\n\nPLATAFORMA: 22')
 		#
-		elif valores['-NOME-'].lower() == 'util' or valores['-NOME-'].lower() == 'brisa' or valores['-NOME-'].lower() == 'guanabara' or valores['-NOME-'].lower() == 'sampaio' or valores['-NOME-'].lower() == 'gypsyy' or valores['-NOME-'].lower() == 'atual':
+		elif valores['-NOME-'].lower() == 'util' or valores['-NOME-'].lower() == 'brisa' or valores['-NOME-'].lower() == 'guanabara' or valores['-NOME-'].lower() == 'sampaio' or valores['-NOME-'].lower() == 'gypsyy':
 			print('EMPRESA: VIAÇÃO UTIL / BRISA / SAMPAIO / GYPSYY / GUANABARA\n\nGUICHÊS: 20 à 24 - CONTATOS: 0800 883 8830\n\nSITE:\n\n	UTIL: https://www.util.com.br/\n	GUANABARA: https://www.viajeguanabara.com.br/\n	SAMPAIO: https://viacaosampaio.com.br/\n\nPLATAFORMAS: 13, 14, e 15')
 		#
 		elif valores['-NOME-'].lower() == 'cometa' or valores['-NOME-'].lower() == 'catarinense' or valores['-NOME-'].lower() == 'expresso do sul' or valores['-NOME-'].lower() == '1001':
@@ -452,7 +452,7 @@ while True:
 		elif valores['-NOME-'].lower() == 'transur' or valores['-NOME-'].lower() == 'viação transur':
 			print('EMPRESA: VIAÇÃO TRANSUR - GUICHÊS: 09 e 10\n\nCONTATO: (32) 3218-6313\n\nSITE: https://https://www.transur.com.br/horarios_preco\n\nFUNCIONAMENTO: DIARIAMENTE 06h30 - 19h\n\nPLATAFORMA: 17')
 		#
-		elif valores['-NOME-'].lower() == 'bassamar' or valores['-NOME-'].lower() == 'viação bassamar':
+		elif valores['-NOME-'].lower() == 'bassamar' or valores['-NOME-'].lower() == 'viação bassamar' or valores['-NOME-'].lower() == 'viacao bassamar':
 			print('EMPRESA: VIAÇÃO BASSAMAR - GUICHÊ: 31\n\nCONTATO: (32) 3215-5020\n\nSITE: https://www.viacaobassamar.queropassagem.com.br\n\nFUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n\nPLATAFORMAS: 19, 20, e 21')
 		#
 		elif valores['-NOME-'].lower() == 'rio doce' or valores['-NOME-'].lower() == 'riodoce':
@@ -476,14 +476,11 @@ while True:
 		elif valores['-NOME-'].lower() == 'josé maria rodrigues' or valores['-NOME-'].lower() == 'jose maria rodrigues' or valores['-NOME-'].lower() == 'josemariarodrigues' or valores['-NOME-'].lower() == 'jmr':
 			print('EMPRESA: VIAÇÃO JOSÉ MARIA RODRIGUES - GUICHÊ 06 e 07\n\nCONTATO: (32)3215-4460 / (32) 3221-3232\n\nSITE: https://www.josemariarodrigues.com.br\n\nFUNCIONAMENTO: seg - qui 07h - 20h / sex, sáb e dom 07h - 21h30\n\nPLATAFORMAS: 9 e 20 (Plataforma 20 "CONEXÂO AEROPORTO")')
 		#
-		elif valores['-NOME-'].lower() == 'josé maria rodrigues' or valores['-NOME-'].lower() == 'jose maria rodrigues' or valores['-NOME-'].lower() == 'josemariarodrigues' or valores['-NOME-'].lower() == 'jmr':
-			print('EMPRESA: VIAÇÃO JOSÉ MARIA RODRIGUES - GUICHÊ 06 e 07\n\nCONTATO: (32)3215-4460 / (32) 3221-3232\n\nSITE: https://www.josemariarodrigues.com.br\n\nFUNCIONAMENTO: seg - qui 07h - 20h / sex, sáb e dom 07h - 21h30\n\nPLATAFORMAS: 9 e 20 (Plataforma 20 "CONEXÂO AEROPORTO")')
+		elif valores['-NOME-'].lower() == 'águia branca' or valores['-NOME-'].lower() == 'aguia branca' or valores['-NOME-'].lower() == 'aguiabranca':
+			print('	EMPRESA: VIAÇÃO ÁGUIA BRANCA - GUICHÊ 26\n\nCONTATO:(32) 98710-6414\n\nSITE: https://www.aguiabranca.com.br\n\nFUNCIONAMENTO:\n\n	seg - sex 09h - 18h\n	sab 14h - 18h (Intervalo: 12h30 - 13h30)\n\nPLATAFORMA: 12')
 		#
-		elif valores['-NOME-'].lower() == 'àguia branca' or valores['-NOME-'].lower() == 'aguia branca' or valores['-NOME-'].lower() == 'aguiabranca':
-			print('	EMPRESA: VIAÇÃO ÀGUIA BRANCA - GUICHÊ 26\n\nCONTATO:(32) 98710-6414\n\nSITE: https://www.aguiabranca.com.br\n\nFUNCIONAMENTO:\n\n	seg - sex 09h - 18h\n	sab 14h - 18h (Intervalo: 12h30 - 13h30)\n\nPLATAFORMA: 12')
-		#
-		elif valores['-NOME-'].lower() == 'itapemirim':
-			print('	EMPRESA: VIAÇÃO ITAPEMIRIM - GUICHÊ: 29\n\nCONTATOS: (32)3215-5020 \n\nFUNCIONAMENTO:\n\n	seg - sab 06h - 19h\n	dom 07h - 22h\n\nPLATAFORMA: 28')
+		elif valores['-NOME-'].lower() == 'itapemirim' or valores['-NOME-'].lower == 'kaissara':
+			print('	EMPRESA: VIAÇÃO ITAPEMIRIM / KAISSARA - GUICHÊ: 29\n\nCONTATOS: (32)3215-5020 \n\nFUNCIONAMENTO:\n\n	seg - sab 06h - 19h\n	dom 07h - 22h\n\nPLATAFORMA: 28')
 		#
 		#EM CASO DE NÃO CONFORMIDADE...
 		else: 
