@@ -479,7 +479,7 @@ while True:
 		elif valores['-NOME-'].lower() == 'águia branca' or valores['-NOME-'].lower() == 'aguia branca' or valores['-NOME-'].lower() == 'aguiabranca':
 			print('	EMPRESA: VIAÇÃO ÁGUIA BRANCA - GUICHÊ 26\n\nCONTATO:(32) 98710-6414\n\nSITE: https://www.aguiabranca.com.br\n\nFUNCIONAMENTO:\n\n	seg - sex 09h - 18h\n	sab 14h - 18h (Intervalo: 12h30 - 13h30)\n\nPLATAFORMA: 12')
 		#
-		elif valores['-NOME-'].lower() == 'itapemirim' or valores['-NOME-'].lower == 'kaissara':
+		elif valores['-NOME-'].lower() == 'itapemirim' or valores['-NOME-'].lower() == 'kaissara':
 			print('	EMPRESA: VIAÇÃO ITAPEMIRIM / KAISSARA - GUICHÊ: 29\n\nCONTATOS: (32)3215-5020 \n\nFUNCIONAMENTO:\n\n	seg - sab 06h - 19h\n	dom 07h - 22h\n\nPLATAFORMA: 28')
 		#
 		#EM CASO DE NÃO CONFORMIDADE...
