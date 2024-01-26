@@ -282,6 +282,7 @@ while True:
 		#
 		elif valores['-NOME-'].lower() in cidade_11 and valores['-NOME-'].lower() in tarifa_3:
 			print('	EMPRESA: VIAÇÃO PARAIBUNA - GUICHÊS: 12 e 13\n\nCONTATO: (32) 2101-3314 / (32) 3216-2975(PANTUR) / (32)2101-3333\n\nSITE: https://www.paraibunatransportes.com.br/\n\nFUNCIONAMENTO:\n\n	seg à qui: 05h45 - 10h30 - 11h30 às 18h\n	sex: 05h45 - 10h30 - 11h30 - 14h e 15h15 - 19h\n	sab e dom: 05h15 - 10h30 - 11h30- 18h\n\nPLATAFORMA: 18')
+			print('\nTARIFA DE EMBARQUE R$2,55')
 		#
 		elif valores['-NOME-'].lower() in cidade_11 and valores['-NOME-'].lower() in tarifa_4:
 			print('	EMPRESA: VIAÇÃO PARAIBUNA - GUICHÊS: 12 e 13\n\nCONTATO: (32) 2101-3314 / (32) 3216-2975(PANTUR) / (32)2101-3333\n\nSITE: https://www.paraibunatransportes.com.br/\n\nFUNCIONAMENTO:\n\n	seg à qui: 05h45 - 10h30 - 11h30 às 18h\n	sex: 05h45 - 10h30 - 11h30 - 14h e 15h15 - 19h\n	sab e dom: 05h15 - 10h30 - 11h30- 18h\n\nPLATAFORMA: 18')
