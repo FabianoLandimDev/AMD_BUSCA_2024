@@ -33,7 +33,12 @@ import io
 # v1.0.2_2024-01-22, Fabiano Landim:
 # - Mudanças em algumas linhas do código, referente algumas lojas que foram desligadas do TRJFA, inclusão de algumas novas informações sobre guichês no interior do terminal.
 #
+#v1.0.2_2024-03-07, Fabiano Landim
+# - Acréscimo de duas novas cidades, Miguel Pereira, e Pernambuco, Empresas UTIL, PROGRESSO e PARAIBUNA.
+
 # Licença: MIT.
+#
+#################################################################################################################################################################################
 #
 #Criando a função pertinente à janela principal...
 #
@@ -41,12 +46,12 @@ import io
 def janela_inicial():
 	sg.theme('Dark Grey 15')
 	layout = [
-		[sg.Text(' -=-=-= AMD BUSCA -=-=-=', justification='center', text_color='blue', background_color='grey', pad=(0, 10), size=(50, 1), font=('arial 18 bold'))],
+		[sg.Text(' -=-=-= AMD BUSCA -=-=-=', justification='center', text_color='#FFE4C4', background_color='#483D8B', pad=(0, 10), size=(50, 1), font=('arial 18 bold'))],
 		[sg.Text('PESQUISAR POR: ', size=(15, 1), font=('arial 15 bold')), sg.Input(key='-NOME-', size=(25, 1), font=('arial 15'))],
   		[sg.Text('PARA MAIS OPÇÕES COLOQUE UM  " * "  OU  " ** "  ANTES DO NOME DA REFERIDA PESQUISA', justification='center', text_color='yellow', size=(75, 1), font=('arial 10 bold'))],
-		[sg.Button('Pesquisar', bind_return_key=True), sg.Button('Sair'), sg.Button('Limpar'), sg.Text('	NOVA PESQUISA / CLIQUE LIMPAR!', size=(38, 1), text_color='red', font=('arial 15 bold'))],
+		[sg.Button('Pesquisar', bind_return_key=True), sg.Button('Sair'), sg.Button('Limpar'), sg.Text('	NOVA PESQUISA / CLIQUE LIMPAR!', size=(38, 1), text_color='#CD0000', font=('arial 15 bold'))],
 		[sg.Output(size=(65, 16), key='-OUTPUT-', background_color=("Black"))],
-		[sg.Text('Desenvolvedor: fabiano.landim@amdservices.com.br', size=(40, 1), font=('arial 10 bold')), sg.Text('/', size=(1, 1), font=('arial 10 bold')), sg.Text('Versão: v1.0.2_2024-01-18, Fabiano Landim', size=(35, 1), font=('arial 10 bold'))]
+		[sg.Text('Desenvolvedor: fabiano.landim@amdservices.com.br', size=(40, 1), font=('arial 10 bold')), sg.Text('/', size=(1, 1), font=('arial 10 bold')), sg.Text('Versão: v1.0.2_2024-03-07, Fabiano Landim', size=(35, 1), font=('arial 10 bold'))]
 	]
 	return sg.Window('AMD-SERVICES * GUICHÊS EMPRESAS RODOVIÁRIAS * ORGÃOS PÚBLICOS * LOJAS NO TRJDF', layout, font=("Helvetica", 15), finalize=True)
 
@@ -98,7 +103,7 @@ cidade_10 = ['alto araguaia', 'alto garças', 'alto garcas', 'anápolis', 'anapo
 #
 #VIAÇÃO PARAIBUNA:
 #
-cidade_11 = ['alto jequitibá', 'alto jequitiba', 'alvorada de minas', '*argirita', 'bom jesus da cachoeira', 'bjdc', 'caparaó divino', 'caparao divino', 'carangola', 'cataguases', 'conceição do monte alegre', 'conceicao do monte alegre', 'conceiçao do monte alegre', 'cdma', 'espera feliz', 'fervedouro', 'fortaleza de minas', 'fdm', '*guarará', 'guarara', 'laranjal', 'leopoldina', 'liberdade', 'manhuaçu', 'manhuacu', 'manhumirim', '*maripá de minas', '*mdm', '*matias barbosa', 'minduri', 'mindurí', 'miguel pereira', 'miradouro', 'miraí',  'mirai', '*monte verde', 'muriaé', 'muriae', 'parque nacional caparaó', 'parque nacional do caparao', 'pndc', 'passo da pátria', 'passo da patria', 'pdp', '*ponte preta', '*santa helena de minas', '*shdm', '*snt helena de minas', 'serra bocaina', 'simão pereira', 'simao pereira', '*sossego', '*tebas']
+cidade_11 = ['alto jequitibá', 'alto jequitiba', 'alvorada de minas', '*argirita', 'bom jesus da cachoeira', 'bjdc', 'caparaó divino', 'caparao divino', 'carangola', 'cataguases', 'conceição do monte alegre', 'conceicao do monte alegre', 'conceiçao do monte alegre', 'cdma', 'espera feliz', 'fervedouro', 'fortaleza de minas', 'fdm', '*guarará', 'guarara', 'laranjal', 'leopoldina', 'liberdade', 'manhuaçu', 'manhuacu', 'manhumirim', '*maripá de minas', '*mdm', '*matias barbosa', 'minduri', 'mindurí', '*miguel pereira', 'miradouro', 'miraí',  'mirai', '*monte verde', 'muriaé', 'muriae', 'parque nacional caparaó', 'parque nacional do caparao', 'pndc', 'passo da pátria', 'passo da patria', 'pdp', '*ponte preta', '*santa helena de minas', '*shdm', '*snt helena de minas', 'serra bocaina', 'simão pereira', 'simao pereira', '*sossego', '*tebas']
 #
 #VIAÇÃO UNIÃO:
 #
@@ -131,7 +136,7 @@ tarifa_2 = ['afonso arinos', 'bela vista de minas', 'bvdm', 'bias fortes', 'bica
 #
 #Referente ao valor da tarifa de R$2,55
 #
-tarifa_3 = ['além paraíba', 'alem paraiba', 'além paraiba', 'alem paraíba', 'acampamento de campelina', 'adc', 'alto jequitibá', 'alto jequitiba', 'alvorada de minas', 'argirita', '*argirita', 'astolfo dutra', 'barbacena', 'barroso', 'bom jesus da cachoeira', 'bjdc', 'caieiro', 'campestre', 'carandaí', 'carandai', 'coimbra', 'ubá', 'uba', 'visconde do rio branco', 'vdrb', 'cataguases', 'conceição do monte alegre', 'conceicao do monte alegre', 'cdma', '*conceição do monte alegre', '*conceicao do monte alegre', '*cdma', 'conservatória', 'conservatoria', 'descoberto', 'dona euzébia', 'dona euzebia', 'dores de campos', 'ervália', 'ervalia', 'fortaleza de minas', 'fdm', 'helvas', 'ibertioga', 'itaipava', 'laranjal', 'leopoldina', '*leopoldina', 'levy gasparian', 'madre de deus', 'mdd', 'manoel duarte', 'mercês', 'merces', 'minduri', 'mindurí', 'nova friburgo', 'nova iguaçú', 'nova iguaçu', 'paraíba do sul', 'paraiba do sul', 'pds', 'petrópolis', 'petropolis', 'pirapitinga', 'piraúba', 'pirauba', 'prados', 'ressaquinha', 'rio das flores', 'rdf', 'rio preto', 'santana do deserto', 'sdd', 'são pedro da aldeia', 'sao pedro da aldeia', 'spda', 'são sebastião da vitória', 'sao sebastiao da vitoria', 'ssdv', 'senador firmino', 'serra bocaina', '*serra bocaina', 'sobral pinto', 'tebas', '*tebas', 'tiradentes', 'tocantins', 'toledos', 'três ilhas', 'tres ilhas', '3 ilhas', 'três rios',  'tres rios', '3 rios', 'vale sobrado', 'valença', 'vassouras', 'visconde do rio branco', 'vdrb',] 
+tarifa_3 = ['além paraíba', 'alem paraiba', 'além paraiba', 'alem paraíba', 'acampamento de campelina', 'adc', 'alto jequitibá', 'alto jequitiba', 'alvorada de minas', 'argirita', '*argirita', 'astolfo dutra', 'barbacena', 'barroso', 'bom jesus da cachoeira', 'bjdc', 'caieiro', 'campestre', 'carandaí', 'carandai', 'coimbra', 'ubá', 'uba', 'visconde do rio branco', 'vdrb', 'cataguases', 'conceição do monte alegre', 'conceicao do monte alegre', 'cdma', '*conceição do monte alegre', '*conceicao do monte alegre', '*cdma', 'conservatória', 'conservatoria', 'descoberto', 'dona euzébia', 'dona euzebia', 'dores de campos', 'ervália', 'ervalia', 'fortaleza de minas', 'fdm', 'helvas', 'ibertioga', 'itaipava', 'laranjal', 'leopoldina', '*leopoldina', 'levy gasparian', 'madre de deus', 'mdd', 'manoel duarte', 'mercês', 'merces', 'minduri', 'mindurí', 'miguel pereira', '*miguel pereira', 'nova friburgo', 'nova iguaçú', 'nova iguaçu', 'paraíba do sul', 'paraiba do sul', 'pds', 'petrópolis', 'petropolis', 'pirapitinga', 'piraúba', 'pirauba', 'prados', 'ressaquinha', 'rio das flores', 'rdf', 'rio preto', 'santana do deserto', 'sdd', 'são pedro da aldeia', 'sao pedro da aldeia', 'spda', 'são sebastião da vitória', 'sao sebastiao da vitoria', 'ssdv', 'senador firmino', 'serra bocaina', '*serra bocaina', 'sobral pinto', 'tebas', '*tebas', 'tiradentes', 'tocantins', 'toledos', 'três ilhas', 'tres ilhas', '3 ilhas', 'três rios',  'tres rios', '3 rios', 'vale sobrado', 'valença', 'vassouras', 'visconde do rio branco', 'vdrb',] 
 #
 #Referente ao valor da tarifa de R$5,25
 #
