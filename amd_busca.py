@@ -22,10 +22,10 @@ import io
 #
 # Histórico:
 #
-# v1.0.0 2022-08-14, Fabiano Landim:
+# v1.0.0_2022-08-14, Fabiano Landim:
 # - Versão Inicial do Programa.
 #
-# v1.0.1 2023-05-10, Fabiano Landim:
+# v1.0.1_2023-05-10, Fabiano Landim:
 # - Versão Inicial do Programa, com alguns ajustes ortográficos para facilitar a digitação nas pesquisas pelos colaboradores (usuário final) além do recurso de confirmar a pesquisa com a tecla enter do teclado da Máquina (PC/NOTEBOOK).
 #
 # - Versão Inicial do Programa, com alguns ajustes ortográficos. Atualização de busca sobre o estabelecimento Farmácia FARMACIAKI, que se desligara do TRJDF em outubro de 2023
@@ -33,12 +33,16 @@ import io
 # v1.0.2_2024-01-22, Fabiano Landim:
 # - Mudanças em algumas linhas do código, referente algumas lojas que foram desligadas do TRJFA, inclusão de algumas novas informações sobre guichês no interior do terminal.
 #
-#v1.0.2_2024-03-07, Fabiano Landim
+#v1.0.3_2024-03-07, Fabiano Landim
 # - Acréscimo de duas novas cidades, Miguel Pereira, e Pernambuco, Empresas UTIL, PROGRESSO e PARAIBUNA.
-
+#
+# v1.0.4_2024-08-13, Fabiano Landim
+# - Correçõe dos novos números de telefone do balcão de informações, inclusão de novos serviços.
+#
 # Licença: MIT.
 #
 #################################################################################################################################################################################
+#
 #
 #Criando a função pertinente à janela principal...
 #
@@ -51,7 +55,7 @@ def janela_inicial():
   		[sg.Text('PARA MAIS OPÇÕES COLOQUE UM  " * "  OU  " ** "  ANTES DO NOME DA REFERIDA PESQUISA', justification='center', text_color='yellow', size=(75, 1), font=('arial 10 bold'))],
 		[sg.Button('Pesquisar', bind_return_key=True), sg.Button('Sair'), sg.Button('Limpar'), sg.Text('	NOVA PESQUISA / CLIQUE LIMPAR!', size=(38, 1), text_color='#CD0000', font=('arial 15 bold'))],
 		[sg.Output(size=(65, 16), key='-OUTPUT-', background_color=("Black"))],
-		[sg.Text('Desenvolvedor: fabiano.landim@amdservices.com.br', size=(40, 1), font=('arial 10 bold')), sg.Text('/', size=(1, 1), font=('arial 10 bold')), sg.Text('Versão: v1.0.2_2024-03-07, Fabiano Landim', size=(35, 1), font=('arial 10 bold'))]
+		[sg.Text('Desenvolvedor: fabiano.landim@amdservices.com.br', size=(40, 1), font=('arial 10 bold')), sg.Text('/', size=(1, 1), font=('arial 10 bold')), sg.Text('Versão: v1.0.4_2024-08-13, Fabiano Landim', size=(35, 1), font=('arial 10 bold'))]
 	]
 	return sg.Window('AMD-SERVICES * GUICHÊS EMPRESAS RODOVIÁRIAS * ORGÃOS PÚBLICOS * LOJAS NO TRJDF', layout, font=("Helvetica", 15), finalize=True)
 
@@ -335,7 +339,7 @@ while True:
 			print('	EMPRESA: VIAÇÃO ITAPEMIRIM / KAISSARA - GUICHÊ: 29\n\nCONTATOS: (32)3215-5020 \n\nFUNCIONAMENTO:\n\n	seg - sab 06h - 19h\n	dom 07h - 22h\n\nPLATAFORMA: 28')
 			print('\nTARIFA DE EMBARQUE R$5,25')
 		#
-		# LISTA DE ORGÃOS PÚBLICOS,LOJAS, E GUICHÊS NO INTERIOR DO TRJFA:
+		# LISTA DE ORGÃOS PÚBLICOS,LOJAS, SERVIÇOS E GUICHÊS NO INTERIOR DO TRJDF:
 		#
 		elif valores['-NOME-'].lower() == 'inss' or valores['-NOME-'].lower() == 'previdencia' or valores['-NOME-'].lower() == 'previdência' or valores['-NOME-'].lower() == 'previdência social':
 			print('	AGÊNCIA INSS TERMINAL RODOVIÁRIO MIGUEL MANSUR\n\nATENDIMENTO: seg à sex de 07h àS 13h\n\nAGENDAMENTO: gov.br/meuinss  ou 135')
@@ -368,7 +372,7 @@ while True:
 			print('MIGRAÇÃO TERMINAL RODOVIÁRIO MIGUEL MANSUR\n\nATENDIMENTO: seg à qui de 09h às 15h - sex de 13h às 15h\n\nCONTATOS: (32)3690-7102\n\nCENTRO POP - RUA SETE DE SETEMBRO 1341 (CENTRO)\n\nFUNCIONAMENTO: 06h:30 Às 18h')
 		#
 		elif valores['-NOME-'].lower() == 'balcão' or valores['-NOME-'].lower() == 'balcao' or valores['-NOME-'].lower() == 'amd' or valores['-NOME-'].lower() == 'amd balcão' or valores['-NOME-'].lower() == 'amd balcao' or valores['-NOME-'].lower() == 'rodoviaria' or valores['-NOME-'].lower() == 'balcao rodoviaria' or valores['-NOME-'].lower() == 'amd services':
-			print('AMD SERVICES BALCÃO DE INFORMAÇÕES TERMINAL RODOVIÁRIO MIGUEL MANSUR\n\nATENDIMENTO: seg à seg 24h\n\n\nCONTATOS: (32) 3217-2828\n\n\nAv Brasil nº 9501 Bairro São Dimas Cep: 36080-060')
+			print('	AMD SERVICES BALCÃO DE INFORMAÇÕES\n	TERMINAL RODOVIÁRIO MIGUEL MANSUR\n\nATENDIMENTO: seg à seg 24h\n\n\nCONTATOS:\n	(32) 3017-2828\n	(32) 3313-4433\n	WhatsApp: (32) 98848-8888\n\n\n	Av. Brasil nº 9501 Bairro São Dimas Cep: 36080-060')
 		#
 		elif valores['-NOME-'].lower() == 'adm' or valores['-NOME-'].lower() == 'secretaria' or valores['-NOME-'].lower() == 'administração' or valores['-NOME-'].lower() == 'administraçao' or valores['-NOME-'].lower() == 'administracao' or valores['-NOME-'].lower() == 'adm amd' or valores['-NOME-'].lower() == 'secretaria' or valores['-NOME-'].lower() == 'diretoria':
 			print(' * ADMINISTRATIVO TERMINAL RODOVIÁRIO MIGUEL MANSUR * \n\nATENDIMENTO: seg à sex 9h às 18h\n\nEndereço: Av Brasil nº 9501, Bairro São Dimas Cep: 36080-060\n\n(OBS: FAVOR ANOTAR RECADO, CASO SEJA FINAL DE SEMANA OU FERIADO)')
@@ -409,6 +413,8 @@ while True:
 		elif valores['-NOME-'].lower() == 'padaria' or valores['-NOME-'].lower() == 'estacao mineira' or valores['-NOME-'].lower() == 'estação mineira' or valores['-NOME-'].lower() == 'estaçao mineira':
 			print('		-=-=-= PADARIA ESTAÇÃO MINEIRA -=-=-=\n\nLocal: Terminal Rodoviário Miguel Mansur\n\nFuncionamento: 24h (exceto nas madrugadas de sab para dom)\n\nContato: (**) *****-****\n\nResponsável: Wagner / Adriana')
 		#
+		elif valores['-NOME-'].lower() == 'box100' or valores['-NOME-'].lower() == 'box 100' or valores['-NOME-'].lower() == 'box':
+			print('		-=-=-= BOX 100 GUARDA VOLUMES -=-=-=\n\nLocal: Terminal Rodoviário Miguel Mansur\n\nFuncionamento: 24h\n\nContatos:\n\n	AEROPORTO: (32) 3222-9015\n	CENTRO: (32) 3026-2100 \n	MARIANO: (32) 99198-0199\n\nResponsável: Ramiro (32) 98808-5534')
 		#GLOSSÁRIO TERMINAL RODOVIÁRIO...
 		#
 		elif valores['-NOME-'].lower() == 'p1' or valores['-NOME-'].lower() == 'p 1' or valores['-NOME-'].lower() == 'p01' or valores['-NOME-'].lower() == 'p 01':
@@ -427,7 +433,7 @@ while True:
 			print('>>> P5:\n\nCÓDIGO REFERENTE AOS SETORES PERTINENTES AOS SANITÁRIOS (PAGOS E GRATUITOS) DO TERMINAL RODOVIÁRIO DE JUIZ DE FORA')
 		#
 		elif valores['-NOME-'].lower() == 'p6' or valores['-NOME-'].lower() == 'p 6' or valores['-NOME-'].lower() == 'p06' or valores['-NOME-'].lower() == 'p 06':
-			print('>>> P6:\n\nCÓDIGO REFERENTE AO SETOR PERTINENTE À ADMINISTRAÇÃO DO TERMINAL RODOVIÁRIO DE JUIZ DE FORA\n\nNO P6 SE ENCONTRA OS SETORES DE ENGENHARIA, BRIGADA, SALA DOS SUPERVISORES, SECRETARIA E A DIRETORIA DA AMD')
+			print('>>> P6:\n\nCÓDIGO REFERENTE AO SETOR PERTINENTE À ADMINISTRAÇÃO DO TERMINAL RODOVIÁRIO DE JUIZ DE FORA\n\nNO P6 SE ENCONTRA OS SETORES DE ENGENHARIA E TÉCNICOS DA AMD SERVICES, SETOR DE R-AFIS, SALA DOS SUPERVISORES, SECRETARIA E A DIRETORIA DA AMD')
 		#
 		elif valores['-NOME-'].lower() == 'p7' or valores['-NOME-'].lower() == 'p 7' or valores['-NOME-'].lower() == 'p07' or valores['-NOME-'].lower() == 'p 07':
 			print('>>> P7:\n\nCÓDIGO REFERENTE AO SETOR PERTINENTE AO ESTACIONAMENTO DO TERMINAL RODOVIÁRIO DE JUIZ DE FORA\n\nESTACIONAMENTO PAGO, EM CASO DE DÚVIDAS SOBRE ADESÃO DE NOVOS MENSALISTAS, PESQUISAR PELA PALAVRA CHAVE "MENSALISTA"')
@@ -437,6 +443,34 @@ while True:
 		#
 		elif valores['-NOME-'].lower() == 'p9' or valores['-NOME-'].lower() == 'p 9' or valores['-NOME-'].lower() == 'p09' or valores['-NOME-'].lower() == 'p 09':
 			print('>>> P8:\n\nCÓDIGO REFERENTE AO SETOR PERTINENTE DO ALMOXARIFADO NO TERMINAL RODOVIÁRIO DE JUIZ DE FORA')
+		#
+		elif valores['-NOME-'].lower() == 'alfa1' or valores['-NOME-'].lower() == 'alfa 01' or valores['-NOME-'].lower() == 'alfa 1' or valores['-NOME-'].lower() == 'alpha1' or valores['-NOME-'].lower() == 'alpha 1':
+			print('>>> ALPHA 1:\n\nCÓDIGO REFERENTE AO GERENTE OPERACIONAL DO TERMINAL RODOVIÁRIO MIGUEL MANSUR EM JUIZ DE FORA.\n\nRESPONSÁVEL:\n\n	> REGIVAN SILVA')
+		#
+		elif valores['-NOME-'].lower() == 'alfa2' or valores['-NOME-'].lower() == 'alfa 02' or valores['-NOME-'].lower() == 'alfa 2' or valores['-NOME-'].lower() == 'alpha2' or valores['-NOME-'].lower() == 'alpha 2':
+			print('>>> ALPHA 2:\n\nCÓDIGO REFERENTE AOS PROFISSIONAIS RESPONSÁVEIS EM FISCALIZAR OS SETORES OPERACIONAIS DO TERMINAL RODOVIÁRIO MIGUEL MANSUR EM JUIZ DE FORA\n\nRESPONSÁVEIS:\n\n	> JEFFERSON DOMINGOS (TURNO A)\n	> ANA MARIA (TURNO B)\n	> SIDCLEI CHAVES (TURNO C)\n	> DAVIS PETERSON (TURNO D)')
+		#
+		elif valores['-NOME-'].lower() == 'alfa3' or valores['-NOME-'].lower() == 'alfa 03' or valores['-NOME-'].lower() == 'alfa 3' or valores['-NOME-'].lower() == 'alpha3' or valores['-NOME-'].lower() == 'alpha 3':
+			print('>>> ALPHA 3:\n\nCÓDIGO REFERENTE AO BALCÃO DE INFORMAÇÕES, SETOR PERTINENTE AOS "OPERADORES" DE NÍVEL OPERACIONAL EM FUNÇÕES LABORAIS DE ATENDIMENTO AO PÚBLICO EM GERAL.')
+		#
+		elif valores['-NOME-'].lower() == 'alfa4' or valores['-NOME-'].lower() == 'alfa 04' or valores['-NOME-'].lower() == 'alfa 4' or valores['-NOME-'].lower() == 'alpha4' or valores['-NOME-'].lower() == 'alpha 4':
+			print('>>> ALPHA 4:\n\nCÓDIGO REFERENTE AO PROFISSIONAL RESPONSÁVEL POR DESEMPENHAR O SUPORTE AOS SISTEMAS DE INFORMAÇÃO E SEGURANÇA DA INFORMAÇÃO NO TERMINAL RODOVIÁRIO DE JUIZ DE FORA\n\nRESPONSÁVEL:\n\n	> FABIANO LANDIM')
+		#
+		elif valores['-NOME-'].lower() == 'alfa5' or valores['-NOME-'].lower() == 'alfa 05' or valores['-NOME-'].lower() == 'alfa 5' or valores['-NOME-'].lower() == 'alpha5' or valores['-NOME-'].lower() == 'alpha 5':
+			print('>>> ALPHA 5:\n\nCÓDIGO REFERENTE A SUPERVISORA OPERACIONAL DO TERMINAL RODOVIÁRIO DE JUIZ DE FORA\n\nRESPONSÁVEL: \n\n	> SARAH FAUSTINO')
+		#
+		elif valores['-NOME-'].lower() == 'alfa6' or valores['-NOME-'].lower() == 'alfa 06' or valores['-NOME-'].lower() == 'alfa 6' or valores['-NOME-'].lower() == 'alpha6' or valores['-NOME-'].lower() == 'alpha 6':
+			print('>>> ALPHA 6:\n\nCÓDIGO REFERENTE AO PROFISSIONAL RESPONSÁVEL POR AUXILIAR NAS DEMANDAS PERTINENTES DE MANUTENÇÃO DO TERMINAL RODOVIÁRIO\n\nRESPONSÁVEL:\n\n	> HUGO LAUREANO')
+		#
+		elif valores['-NOME-'].lower() == 'alfa7' or valores['-NOME-'].lower() == 'alfa 07' or valores['-NOME-'].lower() == 'alfa 7' or valores['-NOME-'].lower() == 'alpha7' or valores['-NOME-'].lower() == 'alpha 7':
+			print('>>> ALPHA 7:\n\nCÓDIGO REFERENTE AO PROFISSIONAL RESPONSÁVEL POR DESEMPENHAR OS TRABALHOS DE MANUTEÇÃO NO TERMINAL RODOVIÁRIO\n\nRESPONSÁVEL:\n\n	> JONATHAS CARVALHO')
+		#
+		elif valores['-NOME-'].lower() == 'alfa8' or valores['-NOME-'].lower() == 'alfa 08' or valores['-NOME-'].lower() == 'alfa 8' or valores['-NOME-'].lower() == 'alpha8' or valores['-NOME-'].lower() == 'alpha 8':
+			print('>>> ALPHA 8:\n\nCÓDIGO REFERENTE AO PROFISSIONAL RESPONSÁVEL POR VIGIAR A ENTRADA E SAÍDA DAS PESSOAS, OU BENS DA ENTIDADE. TOMAR AS MEDIDAS NECESSÁRIAS PARA EVITAR DANOS, BASEANDO-SE NAS CIRCUNSTÂNCIAS OBSERVADAS E VALENDO-SE DA AUTORIDADE QUE LHE FOI OUTORGADA')
+		#
+		elif valores['-NOME-'].lower() == 'alfa9' or valores['-NOME-'].lower() == 'alfa 09' or valores['-NOME-'].lower() == 'alfa 9' or valores['-NOME-'].lower() == 'alpha9' or valores['-NOME-'].lower() == 'alpha 9':
+			print('>>> ALPHA 9:\n\nCÓDIGO REFERENTE AO PROFISSIONAL RESPONSÁVEL POR AUXILIAR O SETOR ADMINISTRATIVO DO TERMINAL RODOVIÁRIO')
+		#
 		#
 		#RELAÇÃO DOS GUICHÊS E SEUS DADOS...
 		#
@@ -490,6 +524,6 @@ while True:
 		#
 		#EM CASO DE NÃO CONFORMIDADE...
 		else: 
-			print('\nCONFIRA O NOME DA PESQUISA, E TENTE NOVAMENTE!\n\nPOSSIBILIDADE DE NÃO HAVER EMBARQUE PARA ESSE DESTINO NO TRJDF!\n\nPOSSIBILIDADE DE NÃO CONSTAR NO BANCO DE DADOS DO PROGRAMA\n\nCLIQUE EM LIMPAR PARA NOVA PESQUISA!')
+			print('\n	-=-=-=-=-=-=-= DESCONHECIDO -=-=-=-=-=-=-=-=-\n\n> CONFIRA A ORTOGRAFIA DA PESQUISA, E TENTE NOVAMENTE!\n\n> POSSIBILIDADE DE NÃO CONSTAR NO BANCO DE DADOS!\n\n> CLIQUE EM LIMPAR PARA UMA NOVA PESQUISA!')			
 #
 janela.Close()
